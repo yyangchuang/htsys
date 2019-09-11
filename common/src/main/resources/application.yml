@@ -1,0 +1,17 @@
+# Redis服务器地址
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 0
+    pool:
+      #最大空闲数
+      max-idle: 200
+      #最大连接数
+      max-active: 1024
+      #等待可用连接的最大时间，单位毫秒，默认值为-1，表示永不超时。如果超过等待时间，则直接抛出JedisConnectionException；
+      max-wait: 10000
+    password: null
+    jmxEnabled: true
+    blockWhenExhausted: false
+
